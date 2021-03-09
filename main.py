@@ -470,7 +470,7 @@ def show_graph(x_y_arr):
 
 
 
-file_name = ('./Gd_powder1/Gd_45 m-s_H L plan_m1.55_KN_2.rso.dat',)
+file_name = ('./files/as-quenched.txt',)
 catalog = catalog_separate(file_name[0])
 field = 70000
 mass = 1.54E-3
@@ -586,7 +586,7 @@ field_points = get_field_points() # получаем массив точек м�
 
 
 
-# extremum_of_mec_vs_field = get_extr_mec_vs_field(field_points, curves, kind='values') # получаем dSmax(H)
+extremum_of_mec_vs_field = get_extr_mec_vs_field(field_points, curves, kind='values') # получаем dSmax(H)
 # print(extremum_of_mec_vs_field)
 
 # выводим файл dSmax(H)
@@ -601,8 +601,8 @@ field_points = get_field_points() # получаем массив точек м�
 #             vertical_units, mass, add_label, x_coef)
 
 # получаем dSmax(H)
-# extremum_of_mec_vs_field = transform_arr(extremum_of_mec_vs_field)
-# show_graph([[extremum_of_mec_vs_field[0, :], -extremum_of_mec_vs_field[1, :]]])
+extremum_of_mec_vs_field = transform_arr(extremum_of_mec_vs_field)
+show_graph([[extremum_of_mec_vs_field[0, :], -extremum_of_mec_vs_field[1, :]]])
 
 
 

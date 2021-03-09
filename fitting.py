@@ -1,7 +1,6 @@
 import numpy as np
 from math_func import determinant
-# from spec_func import np_arr
-# from help_functions import copy_arr
+
 
 def copy_arr(arr):
     f = []

@@ -1,6 +1,5 @@
 from math_func import is_digit
-# from values_autodefinition import *
-from help_functions import *
+from help_functions import ar_create, index_def
 import os
 
 
